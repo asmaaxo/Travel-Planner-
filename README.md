@@ -10,45 +10,33 @@ Itinerary Overview: View a day-by-day itinerary combining destinations and activ
 Installation
 Clone the repository:
 
-bash
-Copy code
-git clone https://github.com/yourusername/travel-planning-app.git
-cd travel-planning-app
-Create and activate a virtual environment:
-
-bash
 Copy code
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 Install the required packages:
 
-bash
 Copy code
 pip install -r requirements.txt
 Set up the database:
 
 Initialize the database using Alembic:
 
-bash
 Copy code
 alembic upgrade head
 If Alembic is not initialized, set it up:
 
-bash
 Copy code
 alembic init migrations
 Configure alembic.ini to point to your database.
 
 Generate initial migration:
 
-bash
 Copy code
 alembic revision --autogenerate -m "Initial migration"
 alembic upgrade head
 Usage
 Run the CLI application:
 
-bash
 Copy code
 python cli.py
 Follow the on-screen menu to manage trips, destinations, activities, and budgets.
@@ -69,21 +57,20 @@ Fork the repository.
 
 Create a new branch:
 
-bash
 Copy code
 git checkout -b feature/your-feature-name
 Make your changes and commit them:
 
-bash
 Copy code
 git commit -m "Add your message here"
 Push to your fork:
 
-bash
 Copy code
 git push origin feature/your-feature-name
 Create a pull request.
 
+video link: https://www.awesomescreenshot.com/video/34843670?key=b8aa20adce67f043ca142d6dc11316b1
+slides link: https://docs.google.com/presentation/d/13DIg9FENMBmWE7liJXo0bT0A9_RAWPONXX_G7slMdAI/edit#slide=id.p3
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
